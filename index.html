@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Travel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Public Transport Logo">
+                    <h1>Easy Travel</h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#Routes">Routes</a></li>
+                    <li>
+                        <a href="#schedules">Schedules</a>
+                        <ul class="dropdown">
+                            <li><a href="#bus">Bus</a></li>
+                            <li><a href="#train">Train</a></li>
+                            <li><a href="#metro">Metro</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="signup-button" onclick="location.href='#signup'">Sign Up</button>
+                <button class="login-button" onclick="location.href='#login'">Login</button>
+            </div>
+        </div>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to the Easy Travel Website</h2>
+        <p>Find your routes, schedules, and more.</p>
+    </section>
+
+    <section id="schedules">
+        <h2>Schedules</h2>
+        <table id="schedule-table">
+            <tr>
+                <th>Route</th>
+                <th>Departure</th>
+                <th>Arrival</th>
+            </tr>
+            <!-- Schedule data will be populated here by JavaScript -->
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For more information, please contact us at info@publictransport.com.</p>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>About Easy Travel</h2>
+                <p>Your go-to source for public transportation routes, schedules, and updates. We make it easy for you to navigate the city.</p>
+            </div>
+            <div class="footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#Routes">Routes</a></li>
+                    <li><a href="#schedules">Schedules</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p>Email: <a href="mailto:info@publictransport.com">info@publictransport.com</a></p>
+                <p>Phone: +123 456 7890</p>
+                <div class="footer-social">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Easy Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
